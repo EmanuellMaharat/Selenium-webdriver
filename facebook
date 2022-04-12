@@ -1,0 +1,17 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+driver = webdriver.Chrome("C:/webdeiver/chromedriver.exe")
+
+driver.get("https://www.facebook.com")
+
+#Forgot password
+
+driver.find_element(By.XPATH,"//body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/div[3]/a[1]").click()
+
+#Login
+driver.find_element(By.XPATH ,"//button[@id='u_0_h_AW']").click()
+
+#Create new account
+
+driver.find_element(By.XPATH , "//body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/div[5]/a[1]").click()
